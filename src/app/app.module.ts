@@ -7,6 +7,7 @@ import { CoursesComponet } from './course.component';
 import { CourseComponent } from './course/course.component';
 import { CourseService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
+import { AuthorService } from './authors/author.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AuthorsComponent } from './authors/authors.component';
     AppRoutingModule
   ],
   providers: [
-    CourseService
+    CourseService,
+    AuthorService,
   ],
   bootstrap: [AppComponent]
 })
